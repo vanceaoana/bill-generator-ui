@@ -1,25 +1,25 @@
 .main-box {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: column;
   width: 50%;
-  margin: auto;
+  margin: 25px auto auto;
+  row-gap: 20px;
+  border-radius: 25px;
+  border: 2px solid rgb(231 225 225);
+  padding: 25px;
 }
 
 .row1-box {
   display: flex;
-  gap: 10px;
+  gap: 30px;
 }
 
-.nrcrt-box {
-  display: flex;
-  gap: 10px;
+.nrcrt-input {
   flex-grow: 1;
 }
 
-.cursbnr-box {
-  display: flex;
-  gap: 10px;
+.cursbnr-input {
   flex-grow: 1;
 }
 
@@ -28,11 +28,19 @@
   gap: 10px;
 }
 
-.row3-box {
-  display: flex;
-  gap: 10px;
+.upload-path-input {
+  flex-grow: 1;
 }
 
+.row3-box {
+  display: flex;
+  gap: 30px;
+}
+
+.radio-button-box {
+  display: flex;
+  gap: 30px;
+}
 .export-choice-label {
   flex-grow: 1;
 }
@@ -41,4 +49,16 @@
   flex-grow: 1;
 }
 
+.row4-box {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.row6-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-inline: 30%;
+}
 

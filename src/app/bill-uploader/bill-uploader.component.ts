@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {NgxFileDropEntry} from "ngx-file-drop";
+import { NgxFileDropEntry, FileSystemFileEntry, FileSystemDirectoryEntry } from 'ngx-file-drop';
 
 @Component({
   selector: 'app-bill-uploader',

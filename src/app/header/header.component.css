@@ -1,20 +1,5 @@
-.bluebird-logo{
-  width: 8rem;
-  height: 2rem;
-}
-
-.fa-sign-out-alt{
-  background-color: inherit;
-  margin-right: 10px;
-  margin-left: 25px;
-  color: #fff;
-}
-.example-icon {
-  padding: 0 14px;
-}
-
-.example-spacer {
-  flex: 1 1 auto;
+h1 {
+  color: whitesmoke;
 }
 .darkOana{
   background-color: #2a2929;
