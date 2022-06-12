@@ -1,0 +1,44 @@
+.main-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+}
+
+.row1-box {
+  display: flex;
+  gap: 10px;
+}
+
+.nrcrt-box {
+  display: flex;
+  gap: 10px;
+  flex-grow: 1;
+}
+
+.cursbnr-box {
+  display: flex;
+  gap: 10px;
+  flex-grow: 1;
+}
+
+.row2-box {
+  display: flex;
+  gap: 10px;
+}
+
+.row3-box {
+  display: flex;
+  gap: 10px;
+}
+
+.export-choice-label {
+  flex-grow: 1;
+}
+
+.export-choice-2-label {
+  flex-grow: 1;
+}
+
+

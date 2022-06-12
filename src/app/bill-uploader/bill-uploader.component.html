@@ -1,0 +1,67 @@
+<div class="main-box">
+  <form class="example-form">
+    <div class="row1-box">
+      <div class="nrcrt-box">
+        <mat-label class="nrcrt-label">Nr. crt.:</mat-label>
+        <mat-form-field class="nrcrt-input" appearance="fill">
+          <input matInput placeholder="8">
+        </mat-form-field>
+      </div>
+      <div class="cursbnr-box">
+        <mat-label class="cursbnr-label">Curs bnr:</mat-label>
+        <mat-form-field class="cursbnr-input" appearance="fill">
+          <input matInput placeholder="4.94">
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="row2-box">
+      <mat-label class="upload-path-label">Upload path:</mat-label>
+      <mat-form-field class="upload-path-input" appearance="fill">
+        <input matInput placeholder="C:/somepath">
+      </mat-form-field>
+    </div>
+    <!--  <div class="row3-box">-->
+    <mat-radio-group class="row3-box" aria-label="Select an option">
+      <mat-radio-button class="export-choice-label" value="1">Export excel only</mat-radio-button>
+      <mat-radio-button class="export-choice-2-label" value="2">Export excel + pdf</mat-radio-button>
+    </mat-radio-group>
+    <!--    <div class="export-choice-label">-->
+    <!--      Export excel only-->
+    <!--    </div>-->
+    <!--    <div class="export-choice-2-label">-->
+    <!--      Export excel + pdf-->
+    <!--    </div>-->
+    <!--  </div>-->
+    <div class="row4">
+      <ngx-file-drop dropZoneLabel="Drop files here" (onFileDrop)="dropped($event)"
+                     (onFileOver)="fileOver($event)" (onFileLeave)="fileLeave($event)">
+        <ng-template ngx-file-drop-content-tmp let-openFileSelector="openFileSelector">
+          Optional custom content that replaces the the entire default content.
+          <button type="button" (click)="openFileSelector()">Browse Files</button>
+        </ng-template>
+      </ngx-file-drop>
+      <div class="upload-table">
+        <table class="table">
+          <thead>
+          <tr>
+            <th>Name</th>
+          </tr>
+          </thead>
+          <tbody class="upload-name-style">
+          <tr *ngFor="let item of files; let i=index">
+            <td><strong>{{ item.relativePath }}</strong></td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="row5">
+      <section class="example-section">
+        <mat-checkbox class="example-margin">Send to email</mat-checkbox>
+      </section>
+    </div>
+    <div class="row6">
+      <button mat-raised-button color="accent">Generate!</button>
+    </div>
+  </form>
+</div>
