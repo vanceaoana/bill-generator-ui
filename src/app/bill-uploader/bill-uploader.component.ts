@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgxFileDropEntry, FileSystemFileEntry, FileSystemDirectoryEntry } from 'ngx-file-drop';
+import {BillService} from "../service/bill.service";
 
 @Component({
   selector: 'app-bill-uploader',
@@ -8,7 +9,7 @@ import { NgxFileDropEntry, FileSystemFileEntry, FileSystemDirectoryEntry } from 
 })
 export class BillUploaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private billService: BillService) { }
 
   ngOnInit(): void {
   }
@@ -26,6 +27,12 @@ export class BillUploaderComponent implements OnInit {
 
           // Here you can access the real file
           console.log(droppedFile.relativePath, file);
+
+          const formData = new FormData();
+
+          formData.append('file', file);
+
+          this.billService.generateBill(formData);
 
           /**
            // You could upload it like this:

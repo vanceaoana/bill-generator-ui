@@ -1,14 +1,14 @@
 <form class="main-box">
   <div class="row1-box">
-      <mat-form-field class="nrcrt-input" appearance="outline">
-        <mat-label class="nrcrt-label">Nr. crt.:</mat-label>
-        <input matInput placeholder="8">
-      </mat-form-field>
+    <mat-form-field class="nrcrt-input" appearance="outline">
+      <mat-label class="nrcrt-label">Nr. crt.:</mat-label>
+      <input matInput placeholder="8">
+    </mat-form-field>
 
-      <mat-form-field class="cursbnr-input" appearance="outline">
-        <mat-label class="cursbnr-label">Curs bnr:</mat-label>
-        <input matInput placeholder="4.94">
-      </mat-form-field>
+    <mat-form-field class="cursbnr-input" appearance="outline">
+      <mat-label class="cursbnr-label">Curs bnr:</mat-label>
+      <input matInput placeholder="4.94">
+    </mat-form-field>
   </div>
   <div class="row2-box">
     <mat-form-field class="upload-path-input" appearance="outline">
@@ -27,11 +27,7 @@
 
   <div class="row4-box">
     <ngx-file-drop dropZoneLabel="Drop files here" (onFileDrop)="dropped($event)"
-                   (onFileOver)="fileOver($event)" (onFileLeave)="fileLeave($event)" >
-      <ng-template ngx-file-drop-content-tmp let-openFileSelector="openFileSelector">
-        Optional custom content that replaces the the entire default content.
-        <button type="button" (click)="openFileSelector()">Browse Files</button>
-      </ng-template>
+                   (onFileOver)="fileOver($event)" (onFileLeave)="fileLeave($event)">
     </ngx-file-drop>
     <div class="upload-table">
       <table class="table">
@@ -49,7 +45,7 @@
     </div>
   </div>
   <div class="row5">
-      <mat-checkbox class="example-margin">Send to email</mat-checkbox>
+    <mat-checkbox class="example-margin">Send to email</mat-checkbox>
   </div>
   <div class="row6-box">
     <button mat-raised-button class="row6-item" color="accent">Generate!</button>

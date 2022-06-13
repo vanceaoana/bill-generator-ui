@@ -1,10 +1,10 @@
-import { NgModule } from '@angular/core';
+import {NgModule} from '@angular/core';
 
-import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
+import {AppComponent} from './app.component';
+import {HeaderComponent} from './header/header.component';
 
 import {MatToolbarModule} from "@angular/material/toolbar";
-import { BillUploaderComponent } from './bill-uploader/bill-uploader.component';
+import {BillUploaderComponent} from './bill-uploader/bill-uploader.component';
 import {MatInputModule} from "@angular/material/input";
 import {MatRadioModule} from "@angular/material/radio";
 import {MatFormFieldModule} from "@angular/material/form-field";
@@ -13,6 +13,7 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {NgxFileDropModule} from "ngx-file-drop";
 import {MatCheckboxModule} from "@angular/material/checkbox";
 import {MatButtonModule} from "@angular/material/button";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -28,10 +29,12 @@ import {MatButtonModule} from "@angular/material/button";
     MatRadioModule,
     MatCheckboxModule,
     MatButtonModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     NgxFileDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
